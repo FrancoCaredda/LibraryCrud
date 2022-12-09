@@ -61,6 +61,7 @@ namespace crud_web_api.Controllers
             try
             {
                 _libraryContext.Books.Remove(_libraryContext.Books.First(x => x.Title == title));
+                _libraryContext.SaveChanges();
 
                 return Ok();
             }
