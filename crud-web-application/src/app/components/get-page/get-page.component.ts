@@ -26,6 +26,7 @@ export class GetPageComponent implements OnInit {
     if (book != null) {
       if (book.getCount() == 0 && delta < 0) {
         alert("There is no more copies of the book!");
+        return;
       }
       let count = parseInt(book.getCount().toString()) + delta;
       this.service.updateData(book.getTitle(), new Book(book.getTitle(), count)).subscribe(
