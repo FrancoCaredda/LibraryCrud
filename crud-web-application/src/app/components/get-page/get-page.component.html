@@ -1,0 +1,29 @@
+<h3 style="margin-top: 10px;">List of the data</h3>
+<hr>
+<table class="table" style="text-align: center;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Count</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let model of data; index as i">
+            <td>{{i + 1}}</td>
+            <td>{{model.getTitle()}}</td>
+            <td>{{model.getCount()}}</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h3>Get/Return book</h3>
+<div>
+  <div class="mb-3">
+    <input type="text" class="form-control" placeholder="Name" (change)="changeName($event)">
+  </div>
+  <div class="mb-3">
+    <button class="btn btn-primary" style="margin-right: 10px;" (click)="getBook($event)">Get</button>
+    <button class="btn btn-primary" (click)="returnBook($event)">Return</button>
+  </div>
+</div>

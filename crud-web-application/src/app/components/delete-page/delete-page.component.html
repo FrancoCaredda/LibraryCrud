@@ -1,0 +1,11 @@
+<h3 style="margin-top: 10px;">Delete page</h3>
+<hr>
+<form class="form" style="margin-top: 10px;" (submit)="onSubmit($event)">
+    <div class="mb-3">
+        <label for="data0" class="form-label">Title</label>
+        <input class="form-control" id="data0" required type="text" (change)="onTitleChange($event)" placeholder="Enter Title">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
+</form>

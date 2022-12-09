@@ -1,0 +1,19 @@
+<h3 style="margin-top: 10px;">Update page</h3>
+<hr>
+<form class="form" style="margin-top: 10px;" (submit)="onSubmit($event)">
+    <div class="mb-3">
+        <label for="data0" class="form-label">Old title</label>
+        <input class="form-control" id="data0" required type="text" (change)="onOldTitleChange($event)" placeholder="Enter old title">
+    </div>
+    <div class="mb-3">
+        <label for="data0" class="form-label">Title</label>
+        <input class="form-control" id="data0" required type="text" (change)="onTitleChange($event)" placeholder="Enter title">
+    </div>
+    <div class="mb-3">
+        <label for="data1" class="form-label">Count</label>
+        <input class="form-control" id="data1" required type="number" (change)="onCountChange($event)" placeholder="Enter count">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>

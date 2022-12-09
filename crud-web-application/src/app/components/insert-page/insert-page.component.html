@@ -1,0 +1,15 @@
+<h3 style="margin-top: 10px;">Insert page</h3>
+<hr>
+<form class="form" style="margin-top: 10px;" (submit)="onSubmit($event)">
+    <div class="mb-3">
+        <label for="data0" class="form-label">Title</label>
+        <input class="form-control" id="data0" type="text"   required placeholder="Enter Title" (change)="onTitleChange($event)">
+    </div>
+    <div class="mb-3">
+        <label for="data1" class="form-label">Count</label>
+        <input class="form-control" id="data1" type="number" required placeholder="Enter count" (change)="onCountChange($event)">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Insert</button>
+    </div>
+</form>
